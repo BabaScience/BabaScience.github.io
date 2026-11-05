@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bamba Ba · Senior Full-Stack Developer &amp; System Architect</title>
+<meta name="description" content="Bamba Ba is a senior full-stack developer, system architect and AI engineer based in Rome. Open to new opportunities.">
+<meta name="theme-color" content="#fafaf7">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script>
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  var t = null;
+  try { t = localStorage.getItem('theme'); } catch (e) {}
+  if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  d.setAttribute('data-theme', t);
+})();
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Bamba Ba, back to top">
+      <span class="mark" aria-hidden="true">BB</span>
+      <span class="brand-name">Bamba Ba</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="tools">
+      <button class="icon-btn" id="theme" type="button" aria-label="Switch to dark mode">
+        <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow reveal">Rome, Italy · Open to new opportunities</p>
+      <h1 class="reveal">Bamba Ba</h1>
+      <p class="title reveal">Senior Full-Stack Developer · System Architect · AI Engineer</p>
+      <p class="roles reveal" aria-label="Roles: full-stack, backend, system architect, AI, mobile">
+        <span class="roles-lead">I work as a</span>
+        <span class="typed" id="typed" aria-hidden="true">full-stack developer</span><span class="caret" aria-hidden="true"></span>
+      </p>
+      <p class="lead reveal">I build web, mobile and cloud applications end to end, from the database and the APIs to the interface people actually use.</p>
+      <div class="actions reveal">
+        <a class="btn primary" href="#projects">See my work</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <aside class="facts reveal" aria-label="At a glance">
+      <dl>
+        <div><dt>5+</dt><dd>years shipping production software</dd></div>
+        <div><dt>4</dt><dd>sectors: energy, water, public sector, digital identity</dd></div>
+        <div><dt>3</dt><dd>languages: Italian, French, English</dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="wrap">
+    <h2 class="reveal"><span class="num">01</span>About</h2>
+    <div class="about-grid">
+      <p class="big reveal">I build web, mobile and cloud applications end to end. Over five years I have shipped production software for energy, water, public-sector and digital-identity clients, and I like owning the technical decisions from system design through deployment.</p>
+      <ul class="skills-list">
+        <li class="reveal"><strong>Full-stack web</strong><span>TypeScript, React, Next.js, Node.js (Fastify, Express), Python (Django, Flask)</span></li>
+        <li class="reveal"><strong>Cross-platform mobile</strong><span>React Native for iOS and Android</span></li>
+        <li class="reveal"><strong>Backend &amp; system architecture</strong><span>Microservices, REST and gRPC, PostgreSQL, MongoDB, Redis, Docker, Kubernetes, AWS</span></li>
+        <li class="reveal"><strong>AI engineering</strong><span>LLM apps, AI agents, MCP servers, RAG, audio pipelines</span></li>
+        <li class="reveal"><strong>GIS &amp; maps</strong><span>Map-centric applications and geospatial data</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section alt">
+  <div class="wrap">
+    <h2 class="reveal"><span class="num">02</span>Featured projects</h2>
+    <div class="cards">
+
+      <article class="card reveal">
+        <div class="card-top"><span class="idx">01</span><span class="kind">Geospatial · Web</span></div>
+        <h3>MapReach</h3>
+        <p class="tagline">Spatial accessibility analysis platform</p>
+        <p>A platform that shows on an interactive map how easily places can be reached.</p>
+        <ul>
+          <li>Pre-computed isochrone zones stored in PostGIS: accessibility analyses return in under a second.</li>
+          <li>Fully containerised deployment behind a Caddy reverse proxy.</li>
+        </ul>
+        <ul class="tags"><li>React</li><li>Leaflet</li><li>Python (FastAPI)</li><li>PostgreSQL / PostGIS</li><li>OpenRouteService</li><li>Docker</li><li>Caddy</li></ul>
+        <a class="link" href="https://map-reach.com" target="_blank" rel="noopener">Visit map-reach.com <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-top"><span class="idx">02</span><span class="kind">AI · Desktop</span></div>
+        <h3>Pip</h3>
+        <p class="tagline">Voice AI companion for macOS</p>
+        <p>A voice-first assistant that lives on the Mac and runs your work with a team of specialist AI agents: it delegates research and writing, drives apps and command-line tools, keeps a long-term memory, and asks before anything that commits you.</p>
+        <ul>
+          <li>Desktop app with a sandboxed core: tools, permissions and keys approved by the user.</li>
+          <li>Agent orchestration over MCP, with approval cards that also reach the phone.</li>
+        </ul>
+        <ul class="tags"><li>Tauri 2 (Rust)</li><li>React</li><li>TypeScript</li><li>Node.js</li><li>Claude Agent SDK</li><li>MCP</li></ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-top"><span class="idx">03</span><span class="kind">AI · Platform</span></div>
+        <h3>Preplai</h3>
+        <p class="tagline">Voice-synchronised presentations for AI agents</p>
+        <p>Animated presentations synchronised with the voice, built for AI agents. Agents can create and drive them through MCP.</p>
+        <ul class="tags"><li>TypeScript</li><li>Node.js</li><li>MCP</li><li>Audio pipeline</li></ul>
+        <a class="link" href="https://preplai.com" target="_blank" rel="noopener">Visit preplai.com <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-top"><span class="idx">04</span><span class="kind">Digital identity · Backend</span></div>
+        <h3>PagoPA IT-Wallet Conformance Tool</h3>
+        <p class="tagline">Backend developer · since 2026</p>
+        <p>A tool that checks digital wallets against the Italian IT-Wallet specifications, Italy's national digital identity wallet.</p>
+        <ul class="tags"><li>TypeScript</li><li>Node.js</li><li>Fastify</li><li>Nx monorepo</li><li>OpenID4VCI</li><li>JWT</li><li>DPoP</li><li>PKCE</li></ul>
+        <a class="link" href="https://www.pagopa.gov.it/" target="_blank" rel="noopener">Visit pagopa.gov.it <span aria-hidden="true">→</span></a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <div class="wrap">
+    <h2 class="reveal"><span class="num">03</span>Experience</h2>
+    <ol class="timeline">
+      <li class="reveal">
+        <span class="when">Since 2025</span>
+        <div>
+          <h3>Full-Stack Developer · Digitouch</h3>
+          <p class="where">Rome</p>
+          <p>Leading full-stack architecture and delivery across React, Angular, Node.js and Python. Architected a company-wide component library that set UI standards across teams, and mentored junior developers on React and React Native.</p>
+        </div>
+      </li>
+      <li class="reveal">
+        <span class="when">2022 – 2025</span>
+        <div>
+          <h3>Software Developer · WhereTech</h3>
+          <p class="where">Rome</p>
+          <p>Built GIS applications on AWS for Enel, ENI, A2A and Acquedotto Pugliese, including real-time monitoring dashboards with interactive maps, and wildfire monitoring for the Italian Ministry of Environment (MASE).</p>
+        </div>
+      </li>
+      <li class="reveal">
+        <span class="when">2021</span>
+        <div>
+          <h3>Mobile Developer · ScannBook</h3>
+          <p class="where">Paris</p>
+          <p>Built and released a cross-platform React Native app for book lovers, with a shared codebase for iOS and Android.</p>
+        </div>
+      </li>
+      <li class="reveal">
+        <span class="when">2019 – 2022</span>
+        <div>
+          <h3>Software Developer · Freelance</h3>
+          <p class="where">Remote</p>
+          <p>Delivered mobile apps, web apps and bots for multiple clients, from architecture and backend logic to frontend and deployment.</p>
+        </div>
+      </li>
+    </ol>
+    <p class="edu reveal"><strong>Education:</strong> Computer Engineering, University of Cagliari · <strong>Languages:</strong> Italian, French, English (C1)</p>
+  </div>
+</section>
+
+<section id="stack" class="section alt">
+  <div class="wrap">
+    <h2 class="reveal"><span class="num">04</span>Technical stack</h2>
+    <div class="stack">
+      <div class="reveal"><h3>Languages</h3><ul class="tags"><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>Rust</li></ul></div>
+      <div class="reveal"><h3>Frontend &amp; mobile</h3><ul class="tags"><li>React</li><li>Next.js</li><li>React Native</li><li>Tauri</li></ul></div>
+      <div class="reveal"><h3>Backend</h3><ul class="tags"><li>Node.js</li><li>Fastify</li><li>Express</li><li>Django</li><li>Flask</li><li>REST</li><li>gRPC</li></ul></div>
+      <div class="reveal"><h3>Data &amp; infrastructure</h3><ul class="tags"><li>PostgreSQL</li><li>PostGIS</li><li>MongoDB</li><li>Redis</li><li>Docker</li><li>Kubernetes</li><li>AWS</li></ul></div>
+      <div class="reveal"><h3>AI</h3><ul class="tags"><li>LLM apps</li><li>AI agents</li><li>MCP</li><li>RAG</li><li>Audio pipelines</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="wrap contact">
+    <h2 class="reveal"><span class="num">05</span>Contact</h2>
+    <p class="big reveal">Open to new opportunities. If you have a role or a project in mind, I would be glad to hear from you.</p>
+    <ul class="contact-list reveal">
+      <li><span>Email</span><a href="mailto:lebabamath@gmail.com">lebabamath@gmail.com</a></li>
+      <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/ba-bamba/" target="_blank" rel="noopener">linkedin.com/in/ba-bamba</a></li>
+      <li><span>Medium</span><a href="https://bambaba.medium.com" target="_blank" rel="noopener">bambaba.medium.com</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>© 2026 Bamba Ba</span>
+    <span>Rome, Italy</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
